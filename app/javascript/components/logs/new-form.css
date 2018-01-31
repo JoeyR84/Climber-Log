@@ -1,0 +1,24 @@
+* {
+  outline: 0;
+}
+
+.new-log-form {
+  margin: 16px;
+  padding: 16px;
+  border: 1px solid lightblue;
+}
+
+.new-log-form label {
+  width: 90px;
+  display: inline-block;
+}
+
+textarea.invalid, input.invalid {
+  border: 1px solid red;
+}
+
+textarea, input {
+  padding: 8px;
+  border: 1px solid lightgrey;
+  margin-right: 8px;
+}

@@ -1,0 +1,16 @@
+<div class="nav-side-menu nav-side">
+          <ul class="nav nav-tabs nav-stacked">
+            <li>
+              <%= link_to (raw("<h3>Profile</h3>")), profile_path(current_user) %>
+            </li>
+            <li>
+              <%= link_to (raw("<h3>Logs</h3>")), logs_path(@logs) %>
+            </li>
+            <li>
+              <%= link_to (raw("<h3>About</h3>")), about_index_path() %>
+            </li>
+            <li>
+              <%= link_to (raw("<h3>Training/Nutrition</h3>")), info_index_path() %>
+            </li>
+          </ul>
+</div>

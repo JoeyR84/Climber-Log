@@ -1,0 +1,298 @@
+@import 'variables';
+
+body {
+  // hiding this to try to make sticky footer work
+  padding-bottom: 20px;
+
+  font-family: 'Open Sans', Arial, Tahoma;
+}
+
+.sidebar_logged_in {
+  margin-bottom: 10px;
+}
+
+.jumbotron {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.task_form_member {
+  width: 100%;
+
+}
+
+select {
+  color: #23282E;
+}
+
+.comment_replies {
+  padding-left: 20px;
+}
+
+
+@media (max-width: 767px) {
+  .nav-side-menu .toggle-btn {
+    background-color: transparent;
+    color: #ffffff;
+
+  }
+}
+
+#templates {
+  color: black;
+}
+
+#status {
+  color: black;
+}
+
+.text_box {
+  padding: 10px;
+}
+
+.org_start_row {
+  display: flex; /* equal height of the children */
+}
+
+.org_start_box {
+  flex: 1;
+  padding: 5px;
+
+  // border-style: solid;
+  // border-width: 0.5px;
+  // border-color: #333333;
+}
+
+.goal_row {
+  display: flex;
+}
+
+.goal_box {
+  flex: 1;
+  padding: 10px;
+
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #333333;
+}
+
+#calendar_event_status {
+  color: #23282E;
+}
+
+#template_template_type_id {
+  color: #23282E;
+}
+
+trix-editor {
+  background-color: white;
+}
+
+#tag_cloud {
+  width: 400px;
+  line-height: 1.6em;
+  .s { font-size: 0.8em; }
+  .m { font-size: 1.2em; }
+  .l { font-size: 1.8em; }
+}
+
+.main_logged_in {
+  padding: 20px;
+  margin-top: 40px;
+
+
+  @media (max-width: 767px) {
+    margin-left: 20px;
+  }
+}
+
+.organization-container {
+  @media (min-width: 768px) {
+    padding-left: 75px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 75px 20px 20px;
+  }
+}
+
+.main-container {
+  padding-left: 0px;
+  padding-right: 0px;
+
+  @media (min-width: 768px) {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: 767px) {
+
+  }
+}
+
+.logout-container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 50px;
+  }
+}
+
+.task-list{
+  list-style-type: none;
+}
+
+.nav-top {
+  padding-left: 15px;
+}
+
+.brand a{
+  color: #fff;
+}
+
+.clr {
+  clear:both;
+}
+
+.primary, strong, h2{
+  color: $primary-color;
+}
+
+.background-color{
+  color: $background-color;
+}
+
+.marketing {
+  padding: 20px;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+
+// .navbar-brand {
+//   padding: 13px 15px;
+// }
+
+navbar {
+  text: #fff;
+}
+
+/* footer */
+
+.profile {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+
+.org_profile{
+  height: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* --------------------------------------
+   mailboxer messaging
+   -------------------------------------- */
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+
+.plan-box{
+
+}
+
+.exp-field {
+  display: inline-block;
+  width: 100px;
+}
+
+
+li a {
+  text-align: center;
+}
+
+
+
+.org_profile {
+  height: 50px;
+}
+
+.panel_body_left {
+  float: left;
+}
+
+.panel_body_right {
+  float: right;
+}
+
+.heading_left{
+  float: left;
+}
+
+.heading_right {
+  float: right;
+}
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+// .sidebar {
+//   display: none;
+// }
+// @media (min-width: 768px) {
+//   .sidebar {
+//     position: fixed;
+//     top: 51px;
+//     bottom: 0;
+//     left: 0;
+//     z-index: 1000;
+//     display: block;
+//     overflow-x: hidden;
+//     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+//     background-color: #f5f5f5;
+//     border-right: 1px solid #eee;
+//   }
+// }
+
+
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.div .active {
+  color: $primary-color;
+  background-color: $background-color;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: $primary-color;
+  background-color: $background-color;
+}
+li {
+   white-space: nowrap;
+}

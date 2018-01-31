@@ -1,0 +1,11 @@
+<% flash.each do |key, value| %>
+  <% if key.eql? :notice %>
+    <div class="alert alert-success" role="alert"><%= value %></div>
+  <% elsif key.eql? :error %>
+    <div class="alert alert-danger" role="alert"><%= value %></div>
+  <% elsif key.eql? :warning %>
+    <div class="alert alert-warning" role="alert"><%= value %></div>
+  <% else %>
+    <div class="alert alert-info" role="alert"><%= simple_format(value) %></div>
+  <% end %>
+<% end %>
