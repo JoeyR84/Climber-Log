@@ -18,6 +18,11 @@
   border: solid 2px grey;
 }
 
-#sign-link{
-  float: right;
+body{
+  background: url('rockwall2.jpg');
+  background-size: cover;
+}
+
+#log-background{
+  background-color:rgba(211,211,211,0.5);
 }

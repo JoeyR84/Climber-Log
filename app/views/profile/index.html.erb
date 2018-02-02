@@ -1,4 +1,4 @@
-<% if current_user == @user %>
+<% if current_user %>
   <div class="container">
     <div class="media float-auto">
       <% avatar_url = @user.avatar_url(256) %>
@@ -6,6 +6,7 @@
         <div class="media-left">
           <%= image_tag avatar_url, class: 'media-object img-rounded' %>
         </div>
+        <h1>Welcome Back! Ready to Train?<h1>
       <% end %>
       <br>
       <div class="media-body">
@@ -16,7 +17,6 @@
         <p>Your lasted logged session: <%= @last_log %></p>
       </div>
     </div>
-    <div class="btn btn-default"><%=link_to('Edit', edit_user_registration_path, method: :get)%></div>
   </div>
   <% else %>
     <h2>Private</h2>

@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :logs
+  
 
   def avatar_url(size)
     gravatar_id = Digest::MD5::hexdigest(self.email).downcase

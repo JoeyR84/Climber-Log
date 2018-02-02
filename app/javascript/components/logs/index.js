@@ -36,7 +36,7 @@ class Logs extends React.Component {
         authenticity_token={this.props.authenticity_token}
       />
 
-      <table>
+      <table className="table">
         <thead>
           <tr>
             <th>#</th>
